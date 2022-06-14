@@ -1,18 +1,3 @@
-// const navIconEl = document.querySelector('.nav__icon');
-// const navCloseEl = document.querySelector('nav__close');
-// const navList = document.querySelector('.nav__list');
-
-
-// const navOpen = () => {
-//     navList.classList.add('show');
-// }
-
-// const navClose =() => {
-//     navList.classList.remove('show');
-
-// }
-// navIconEl.addEventListener('clik', navOpen);
-// navCloseEl.addEventListener('clik', navClose);
 
 const navCloseEl = document.querySelector('.nav__close');
 const navList = document.querySelector('.nav__list');
