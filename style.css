@@ -114,7 +114,7 @@ a{
         top: 0;
         height: 100vh;
         width: 80%;
-        background-color: cyan;
+        background-color: grey;
         display: flex;
         align-items: center;
         justify-content: flex-end;
