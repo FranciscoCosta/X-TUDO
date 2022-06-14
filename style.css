@@ -563,8 +563,8 @@ Estilo Resumo */
     object-fit:cover;
 }
 .promo__title__i{
-    font-size: 3rem;
-    line-height: 1.7rem;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 600;
     color: black;
     padding-top: 1.5rem;
@@ -598,6 +598,13 @@ Estilo Resumo */
     }
     .promo__price{
         font-size: 2.8rem;
+    }
+    .promo__title__i{
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 600;
+        color: black;
+        padding-top: 1.5rem;
     }
 }
 .red{
@@ -657,14 +664,6 @@ Estilo Resumo */
     object-fit: cover;
 }
 .ourSpecials__menu__item__title{
-    font-size: 2.4rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: black;
-    line-height: 1.2rem;
-}
-
-.ourSpecials__menu__item__price{
     font-size: 1.8rem;
     color: white;
     font-weight: 600;
@@ -689,10 +688,86 @@ Estilo Resumo */
     .ourSpecials__menu__item__title{
         font-size: 3rem;
         margin-bottom: 1.5rem;
+        line-height: 20rem;
     }
     .ourSpecials__menu__item__price{
         font-size: 2.4rem;
         margin-bottom: 1.5rem   ;
     }
 
+}
+/* Estilo Sobre nos */
+
+.ourstory__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+.oursotry__title{
+font-size: 3rem;
+font-weight: 700;
+color: orange;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.ourstory__text p{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+@media only screen and (min-width:768px) {
+    .ourstory__wrapper{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .ourstory__img,
+    .ourstory__text {
+        flex: 1;
+    }
+    .oursotry__title{
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    .ourstory__text p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+}
+.ourgoals__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    color: white;
+}
+.ourgoals__title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: orange;
+    margin-bottom: 2rem;
+    text-align: center;
+    }
+.ourgoals__text {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+@media only screen and (min-width:768px) {
+    .ourgoals__wrapper{
+        flex-direction:row;
+        gap: 3rem;
+    }
+    .ourgoals__info,
+    .ourgoals__img {
+        flex: 1;
+    }
+    .ourgoals__title{
+        font-size: 5rem;
+        font-weight: 900;
+    }
+    .ourgoals__text{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
