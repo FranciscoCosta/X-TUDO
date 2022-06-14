@@ -58,7 +58,9 @@ a{
     padding: 2rem 0;
     background-color: #845500;
 }
-.nav__icon,.nav__close,.nav__bgOverlay{
+.nav__icon,
+.nav__close,
+.nav__bgOverlay{
     display: none;
 }
 .nav__wrapper{
@@ -91,12 +93,13 @@ a{
     .nav__icon {
         display: block;
     }
-    .nav__icon svg, .nav__close svg{
+    .nav__icon svg,
+    .nav__close svg {
         pointer-events: none;
         height: 30px;
         width: 30px;
     }
-    .nav__close{
+    .nav__close {
         display: block;
         position: absolute;
         color: black;
@@ -110,18 +113,18 @@ a{
         left: 100%;
         top: 0;
         height: 100vh;
-        width: 100%;
+        width: 80%;
         background-color: cyan;
         display: flex;
         align-items: center;
-        justify-content: center;
-        transform: translateX(0%);
+        justify-content: flex-end;
+        transform: translate(0%);
         overflow: hidden;
-        transition: .3s ease-in transform;
+        transition: 0.3s ease-in transform;
 
     }
     .nav__list.show{
-        transform: translateX(-100%);
+        transform: translate(-100%);
     }
     .nav__list li {
         display: block;
@@ -131,6 +134,10 @@ a{
     .nav__list a{
         font-size: 1.6rem;
     }
+    .nav__bgOverlay.active {
+        display: block;
+    }
+
 }
 .btn{
     color: orange;
@@ -769,5 +776,72 @@ text-align: center;
     .ourgoals__text{
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+}
+#form {
+    padding: 5rem 0;
+}
+
+.form__title {
+    font-size: 1.8rem;
+    color: orange;
+    font-weight: 600;
+}
+.form__wrapper form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.form__group label{
+    font-size: 1.6rem;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.form__group input,
+.form__group textarea{
+    width: 100%;
+    border: none;
+    background-color: orange;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    color: black;
+
+}
+.form__group texarea {
+    resize: vertical;
+}
+.form__wrapper button[type=submit]{
+    width: max-content;
+    border: none;
+    padding: 1rem 4rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+@media only screen and (min-width:768px) {
+    .form__title{
+        font-size: 4rem;
+    }
+    .form__wrapper {
+    padding: 5rem 0;
+    }   
+    .form__wrapper form {
+        grid-template-columns: 1fr 1fr;
+    }
+    .form__group__full {
+        grid-column: 1/3;
+    }
+    .form__group label{
+        font-size: 1.8rem;
+    }
+    .form__group input,
+    .form__group textarea{
+        font-size: 1.8rem;
+        padding: 2rem;
+        margin-top: 1.5rem;
     }
 }
